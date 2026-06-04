@@ -546,7 +546,7 @@ select {
 }
 
 .card-grid.four {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .card-grid.three {
@@ -918,6 +918,7 @@ select {
 footer {
   position: relative;
   display: flex;
+  gap: clamp(28px, 5vw, 72px);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -949,10 +950,6 @@ footer nav {
   position: static;
   transform: none;
   margin-bottom: 12px;
-}
-
-footer {
-  flex-direction: column;
 }
 
 .footer-logo {
@@ -1375,6 +1372,7 @@ footer {
   }
 
   footer {
+    flex-direction: column;
     gap: 18px;
     padding-block: 42px;
   }
