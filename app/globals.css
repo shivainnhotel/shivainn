@@ -1443,6 +1443,34 @@ footer nav {
     padding-block: 0;
   }
 
+  .banquet-venue .banquet-copy {
+    display: contents;
+  }
+
+  .banquet-venue .banquet-copy h3 {
+    order: 1;
+  }
+
+  .banquet-venue .banquet-copy .capacity {
+    order: 2;
+  }
+
+  .banquet-venue .banquet-slider {
+    order: 3;
+  }
+
+  .banquet-venue .banquet-copy p:not(.capacity) {
+    order: 4;
+  }
+
+  .banquet-venue .banquet-copy .check-list {
+    order: 5;
+  }
+
+  .banquet-venue .banquet-copy .primary-button {
+    order: 6;
+  }
+
   .banquet-copy h3 {
     font-size: clamp(30px, 9vw, 38px);
     line-height: 1.08;

@@ -130,6 +130,13 @@ type Enquiry = {
 export default function Home() {
   const [slide, setSlide] = useState(0);
   const [heroTouchStart, setHeroTouchStart] = useState<number | null>(null);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
   const [menuOpen, setMenuOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [lightbox, setLightbox] = useState<string | null>(null);
@@ -145,15 +152,15 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-    setScrolled(window.scrollY > window.innerHeight - 100);
-  };
+      setScrolled(window.scrollY > window.innerHeight - 100);
+    };
 
-  window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-  return () => {
-    window.removeEventListener("scroll", handleScroll);
-  };
-}, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const schema = useMemo(
     () => ({
