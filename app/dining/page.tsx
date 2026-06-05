@@ -33,7 +33,7 @@ export default function DiningPage() {
       <section id="dining" className="section service-page">
         <div className="section-heading">
           <p className="eyebrow">Dining Experience</p>
-          <h2>Multi-cuisine dining with warm Shiva Inn hospitality.</h2>
+          <h2>Pure Veg & Multi-cuisine dining with warm Shiva Inn hospitality.</h2>
         </div>
 
         <ManualSlider

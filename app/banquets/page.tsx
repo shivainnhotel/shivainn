@@ -3,44 +3,53 @@ import { ManualSlider } from "@/app/components/ManualSlider";
 import { SiteHeader } from "@/app/components/SiteHeader";
 import { images } from "@/lib/images";
 
-const features = [
-  "Weddings and receptions",
-  "Corporate meetings and conferences",
-  "Birthdays and family functions",
-  "Flexible seating and hospitality support",
-];
-
-const highlights = [
-  "Lotus Hall: 150-200 guests",
-  "Pearl Hall: 60-100 guests",
-  "Board Room: 20-30 guests",
-  "Suitable for formal and social events",
-];
-
-const amenities = [
-  "Air-conditioned venues",
-  "Dining coordination",
-  "Presentation-friendly setup",
-  "Event planning assistance",
-  "Guest hospitality support",
-  "Convenient Haveri location",
-];
+const phone = "+916360644158";
 
 const venues = [
   {
     name: "Lotus Hall",
     capacity: "150-200 Guests",
-    text: "A refined setting for weddings, receptions and large celebrations.",
+    intro:
+      "Lotus Hall is our largest banquet venue, designed for grand celebrations and large-scale events. The hall provides a sophisticated atmosphere, comfortable seating arrangements, and ample space for weddings, receptions, corporate conferences, and special occasions.",
+    features: [
+      "Weddings & Receptions",
+      "Corporate Conferences",
+      "Birthday & Anniversary Celebrations",
+      "Spacious Seating",
+      "Flexible Event Setup",
+    ],
+    gallery: images.banquets.venues.lotus,
+    reverse: false,
   },
   {
     name: "Pearl Hall",
     capacity: "60-100 Guests",
-    text: "A graceful venue for family occasions and business gatherings.",
+    intro:
+      "Pearl Hall is a refined venue perfect for medium-sized gatherings, family functions, social celebrations, and business events. Its elegant interiors and comfortable setting create a welcoming environment for memorable occasions.",
+    features: [
+      "Family Gatherings",
+      "Corporate Meetings",
+      "Social Events",
+      "Engagement Ceremonies",
+      "Private Celebrations",
+    ],
+    gallery: images.banquets.venues.pearl,
+    reverse: true,
   },
   {
     name: "Board Room",
     capacity: "20-30 Guests",
-    text: "A focused meeting space for reviews, presentations and leadership sessions.",
+    intro:
+      "The Board Room is designed for focused discussions, presentations, workshops, interviews, and executive meetings. The space provides a professional environment for business and leadership sessions.",
+    features: [
+      "Executive Meetings",
+      "Presentations",
+      "Workshops",
+      "Interviews",
+      "Leadership Sessions",
+    ],
+    gallery: images.banquets.venues.boardroom,
+    reverse: false,
   },
 ];
 
@@ -51,68 +60,61 @@ export default function BanquetsPage() {
       <section id="banquets" className="section service-page">
         <div className="section-heading">
           <p className="eyebrow">Banquets & Events</p>
-          <h2>Graceful venues for weddings, meetings and celebrations.</h2>
+          <h2>Banquet Venues</h2>
+          <p className="section-description">
+            Hotel Shiva Inn offers elegant banquet spaces for weddings, receptions, conferences,
+            corporate meetings, birthdays, anniversaries, and family celebrations. Each venue is
+            thoughtfully designed with modern amenities, flexible seating arrangements, and
+            attentive hospitality to ensure a memorable experience for every guest.
+          </p>
         </div>
 
-        <ManualSlider
-          className="service-gallery"
-          slides={images.banquets.gallery.map((image, index) => ({
-            src: image,
-            alt: `Hotel Shiva Inn banquet gallery ${index + 1}`,
-          }))}
-          sizes="(max-width: 900px) 100vw, 1120px"
-          priority
-        />
+        <div className="banquet-showcase">
+          {venues.map((venue) => (
+            <article
+              className={venue.reverse ? "banquet-venue banquet-venue--reverse" : "banquet-venue"}
+              key={venue.name}
+            >
+              <div className="banquet-copy">
+                <p className="capacity">{venue.capacity}</p>
+                <h3>{venue.name}</h3>
+                <p>{venue.intro}</p>
+                <ul className="check-list">
+                  {venue.features.map((feature) => (
+                    <li key={feature}>
+                      <Check size={16} />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <a className="primary-button" href={whatsappLink(venue.name)} target="_blank" rel="noopener noreferrer">
+                  Enquire Now <ChevronRight size={18} />
+                </a>
+              </div>
 
-        <div className="service-content">
-          <div className="content-stack">
-            <p className="lead">
-              Hotel Shiva Inn offers banquet spaces for weddings, receptions, conferences,
-              corporate meetings, birthdays and family functions. Each venue is supported
-              by attentive hospitality and flexible arrangements for different event scales.
-            </p>
-            <p className="lead">
-              From intimate boardroom sessions to larger celebrations, the banquet facilities
-              are designed for comfort, coordination and a polished guest experience.
-            </p>
-          </div>
-
-          <section className="venue-summary" aria-label="Venue capacity information">
-            {venues.map((venue) => (
-              <article className="venue-card" key={venue.name}>
-                <div className="card-body">
-                  <p className="capacity">{venue.capacity}</p>
-                  <h3>{venue.name}</h3>
-                  <p>{venue.text}</p>
-                  <a className="text-button" href="/#contact">
-                    Enquire Now <ChevronRight size={16} />
-                  </a>
-                </div>
-              </article>
-            ))}
-          </section>
-
-          <DetailBlock title="Features" items={features} />
-          <DetailBlock title="Highlights" items={highlights} />
-          <DetailBlock title="Amenities" items={amenities} />
+              <ManualSlider
+                className="banquet-slider"
+                slides={venue.gallery.map((image, index) => ({
+                  src: image,
+                  alt: `${venue.name} at Hotel Shiva Inn ${index + 1}`,
+                }))}
+                sizes="(max-width: 900px) 100vw, 50vw"
+              />
+            </article>
+          ))}
         </div>
       </section>
     </main>
   );
 }
 
-function DetailBlock({ title, items }: { title: string; items: string[] }) {
-  return (
-    <section className="detail-block" aria-labelledby={`banquets-${title}`}>
-      <h3 id={`banquets-${title}`}>{title}</h3>
-      <ul className="check-list">
-        {items.map((item) => (
-          <li key={item}>
-            <Check size={16} />
-            {item}
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
+function whatsappLink(venueName: string) {
+  const message = [
+    "Hello Shiva Inn,",
+    "",
+    `I would like to enquire about ${venueName}.`,
+    "Please share availability, packages, and booking details.",
+  ].join("\n");
+
+  return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }

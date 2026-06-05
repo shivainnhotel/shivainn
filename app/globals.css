@@ -124,9 +124,10 @@ button {
 .nav {
   display: flex;
   align-items: center;
-  gap: clamp(14px, 1.7vw, 26px);
-  font-size: 12px;
-  font-weight: 800;
+  gap: clamp(20px, 2vw, 34px);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
 }
 
@@ -846,6 +847,85 @@ select {
   margin: 0 auto;
 }
 
+.section-description {
+  margin: 20px auto 0;
+  max-width: 860px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.banquet-showcase {
+  display: grid;
+  gap: clamp(44px, 7vw, 86px);
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.banquet-venue {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 74px);
+}
+
+.banquet-venue--reverse .banquet-copy {
+  order: 2;
+}
+
+.banquet-copy {
+  display: grid;
+  gap: 20px;
+  padding-block: clamp(10px, 2vw, 24px);
+}
+
+.banquet-copy h3 {
+  margin: 0;
+  color: var(--dark);
+  font-family: "Baskerville", "Libre Baskerville", Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 4.2vw, 54px);
+  font-weight: 500;
+  line-height: 1.04;
+}
+
+.banquet-copy p:not(.capacity) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.banquet-copy .check-list {
+  margin: 2px 0 4px;
+}
+
+.banquet-copy .primary-button {
+  margin-top: 4px;
+}
+
+.banquet-slider {
+  height: 500px;
+  min-height: 500px;
+  border-radius: 12px;
+  border: 1px solid rgba(185, 150, 70, 0.2);
+  background: var(--bg-2);
+  box-shadow: 0 28px 70px rgba(51, 42, 34, 0.18);
+}
+
+.banquet-slider .manual-slide img {
+  border-radius: 12px;
+}
+
+.banquet-slider::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: 12px;
+  background: linear-gradient(180deg, transparent 62%, rgba(38, 34, 29, 0.16));
+}
+
 .detail-block {
   border: 1px solid var(--line);
   background:
@@ -1328,6 +1408,55 @@ footer nav {
 
   .service-content {
     gap: 18px;
+  }
+
+  .section-description {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 1.58;
+  }
+
+  .banquet-showcase {
+    gap: 42px;
+  }
+
+  .banquet-venue,
+  .banquet-venue--reverse {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .banquet-copy,
+  .banquet-venue--reverse .banquet-copy {
+    order: 1;
+  }
+
+  .banquet-slider {
+    order: 2;
+    height: 280px;
+    min-height: 280px;
+    border-radius: 12px;
+  }
+
+  .banquet-copy {
+    gap: 15px;
+    padding-block: 0;
+  }
+
+  .banquet-copy h3 {
+    font-size: clamp(30px, 9vw, 38px);
+    line-height: 1.08;
+  }
+
+  .banquet-copy p:not(.capacity) {
+    font-size: 16px;
+    line-height: 1.58;
+  }
+
+  .banquet-copy .primary-button {
+    width: 100%;
+    min-height: 46px;
+    padding-inline: 16px;
   }
 
   .detail-block {
