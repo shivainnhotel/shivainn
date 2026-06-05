@@ -26,7 +26,7 @@ export function LeadCapturePopup() {
     touchedPhone && phone.length !== 10 ? "Enter a valid 10 digit mobile number." : "";
 
   useEffect(() => {
-    if (pathname === "/vegmenu") {
+    if (pathname === "/vegmenu" || pathname === "/nonvegmenu") {
       return;
     }
 
@@ -42,7 +42,7 @@ export function LeadCapturePopup() {
     return () => window.clearTimeout(timer);
   }, [pathname]);
 
-  if (pathname === "/vegmenu") {
+  if (pathname === "/vegmenu" || pathname === "/nonvegmenu") {
     return null;
   }
 
