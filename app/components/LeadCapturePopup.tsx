@@ -37,7 +37,7 @@ export function LeadCapturePopup() {
     const timer = window.setTimeout(() => {
       window.sessionStorage.setItem(sessionKey, "true");
       setOpen(true);
-    }, 5000);
+    }, 10000);
 
     return () => window.clearTimeout(timer);
   }, [pathname]);

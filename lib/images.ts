@@ -76,8 +76,8 @@ export const images = {
     boardroom: u("photo-1517502884422-41eaead166d4"),
     venues: {
       lotus: [
-        "/banquet/DSC01271_result.webp",
         "/banquet/Untitled design (14) (1)_result.webp",
+        "/banquet/DSC01271_result.webp",
         "/banquet/DSC00951 (1)_result.webp",
       ],
       pearl: [
@@ -87,8 +87,8 @@ export const images = {
 
       ],
       boardroom: [
-        "/banquet/DSC00904_result.webp",
         "/banquet/DSC00879 (1)_result.webp",
+        "/banquet/DSC00904_result.webp",
         "/banquet/DSC00924_result.webp",
       ],
     },
