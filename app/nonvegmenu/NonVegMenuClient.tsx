@@ -348,7 +348,7 @@ const drinksMenuSections = [
     title: "BLENDED SCOTCH WHISKY",
     // 30ml and 60ml prices as per new price list image
     items: [
-      { name: "BLENDRS PRIDE 750ML", price_30ml: "90", price_60ml: "160" },
+      { name: "BLENDRS PRIDE 750ML", price_30ml: "100", price_60ml: "200" },
       { name: "CHIVAS REGEL 750ML 12Y", price_30ml: "260", price_60ml: "510" },
       { name: "BLACK LEBEL 750ML", price_30ml: "250", price_60ml: "480" },
       { name: "VAT 69 750ML", price_30ml: "150", price_60ml: "290" },
@@ -688,8 +688,27 @@ function matchesSearch(section: MenuSection, query: string) {
   return items.length ? { ...section, items } : null;
 }
 
-function formatPrice(item: MenuItem) {
+function cleanDrinkName(name: string) {
+  return name.replace(/\s*\b750\s*ml\b/gi, "").replace(/\s{2,}/g, " ").trim();
+}
+
+function hasTwoServingPrices(section: MenuSection) {
+  return section.items.length > 0 && section.items.every((item) =>
+    item.price_30ml && item.price_60ml && !item.price && !item.price_150ml
+  );
+}
+
+function formatPrice(item: MenuItem, useServingColumns = false) {
   if (item.price_30ml || item.price_60ml) {
+    if (useServingColumns) {
+      return (
+        <span className="drink-price drink-price--columns">
+          <b>{item.price_30ml}</b>
+          <b>{item.price_60ml}</b>
+        </span>
+      );
+    }
+
     return (
       <span className="drink-price">
         {item.price_30ml && <b>30ml {item.price_30ml}</b>}
@@ -720,6 +739,7 @@ export default function NonVegMenuClient() {
   const visibleSections = search.trim() ? filteredSections : menuSections;
   const activeSection =
     visibleSections.find((section) => section.id === activeId) ?? visibleSections[0] ?? menuSections[0];
+  const usesServingColumns = activeSection ? hasTwoServingPrices(activeSection) : false;
 
   useEffect(() => {
     const sections = (menuType === "nonveg" ? nonVegMenuSections : drinksMenuSections) as MenuSection[];
@@ -837,11 +857,21 @@ export default function NonVegMenuClient() {
 
               <h3>{activeSection.title}</h3>
               <div className="dish-list">
+                {usesServingColumns && (
+                  <div className="serving-size-header" aria-hidden="true">
+                    <span />
+                    <i />
+                    <span className="serving-size-columns">
+                      <b>30ml</b>
+                      <b>60ml</b>
+                    </span>
+                  </div>
+                )}
                 {activeSection.items.map((item, index) => (
                   <div className="dish-row" key={`${activeSection.id}-${item.name}-${index}`}>
-                    <span>{item.name}</span>
+                    <span>{menuType === "drinks" ? cleanDrinkName(item.name) : item.name}</span>
                     <i aria-hidden="true" />
-                    {formatPrice(item)}
+                    {formatPrice(item, usesServingColumns)}
                   </div>
                 ))}
               </div>
@@ -1121,7 +1151,8 @@ export default function NonVegMenuClient() {
           letter-spacing: 0;
         }
 
-        .dish-row {
+        .dish-row,
+        .serving-size-header {
           min-height: 32px;
           display: grid;
           grid-template-columns: auto 1fr auto;
@@ -1135,14 +1166,23 @@ export default function NonVegMenuClient() {
           border-bottom: 0;
         }
 
-        .dish-row i {
+        .dish-row i,
+        .serving-size-header i {
           height: 1px;
           border-bottom: 1px dotted rgba(34, 24, 5, 0.5);
           transform: translateY(-3px);
         }
 
+        .serving-size-header {
+          min-height: 26px;
+          color: var(--green-deep);
+          font-size: 0.7rem;
+          text-transform: none;
+        }
+
         .dish-row strong,
-        .drink-price {
+        .drink-price,
+        .serving-size-columns {
           color: var(--green-deep);
           text-align: right;
           white-space: nowrap;
@@ -1152,6 +1192,13 @@ export default function NonVegMenuClient() {
           display: grid;
           gap: 1px;
           font-size: 0.7rem;
+        }
+
+        .drink-price--columns,
+        .serving-size-columns {
+          display: grid;
+          grid-template-columns: 38px 38px;
+          gap: 6px;
         }
 
         .drink-price b {
