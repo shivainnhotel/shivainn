@@ -349,7 +349,7 @@ const drinksMenuSections = [
     // 30ml and 60ml prices as per new price list image
     items: [
       { name: "BLENDRS PRIDE 750ML", price_30ml: "100", price_60ml: "200" },
-      { name: "CHIVAS REGEL 750ML 12Y", price_30ml: "260", price_60ml: "510" },
+      { name: "CHIVAS REGEL 750ML 12Y", price_30ml: "400", price_60ml: "800" },
       { name: "BLACK LEBEL 750ML", price_30ml: "250", price_60ml: "480" },
       { name: "VAT 69 750ML", price_30ml: "150", price_60ml: "290" },
       { name: "BLACK DOG RESERVE 750ML", price_30ml: "150", price_60ml: "290" },        // 🆕 NEW (was BLACK DOG 8 YEARS)
