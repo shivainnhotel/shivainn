@@ -346,157 +346,111 @@ const drinksMenuSections = [
   {
     id: "blended-scotch-whisky",
     title: "BLENDED SCOTCH WHISKY",
+    // 30ml and 60ml prices as per new price list image
     items: [
-      { name: "CHIVAS REGAL 18 YEARS", price_30ml: "670", price_60ml: "1350" },
-      { name: "CHIVAS REGAL 12 YEARS", price_30ml: "260", price_60ml: "510" },
-      { name: "J/W BLACK LABEL", price_30ml: "250", price_60ml: "480" },
-      { name: "J/W RED LABEL", price_30ml: "180", price_60ml: "340" },
-      { name: "J/B RARE", price_30ml: "220", price_60ml: "430" },
-      { name: "BLACK AND WHITE", price_30ml: "150", price_60ml: "290" },
-      { name: "100 PIPERS (REGULAR)", price_30ml: "150", price_60ml: "290" },
-      { name: "100 PIPERS 12 YEARS", price_30ml: "220", price_60ml: "420" },
-      { name: "BLACK DOG 8 YEARS", price_30ml: "180", price_60ml: "350" },
-      { name: "BLACK DOG TRIPLE GOLD RESERVE", price_30ml: "220", price_60ml: "420" },
-      { name: "TEACHERS HIGHLAND", price_30ml: "150", price_60ml: "290" },
-      { name: "TEACHERS 50", price_30ml: "210", price_60ml: "400" }
+      { name: "BLENDRS PRIDE 750ML", price_30ml: "90", price_60ml: "160" },
+      { name: "CHIVAS REGEL 750ML 12Y", price_30ml: "260", price_60ml: "510" },
+      { name: "BLACK LEBEL 750ML", price_30ml: "250", price_60ml: "480" },
+      { name: "VAT 69 750ML", price_30ml: "150", price_60ml: "290" },
+      { name: "BLACK DOG RESERVE 750ML", price_30ml: "150", price_60ml: "290" },        // 🆕 NEW (was BLACK DOG 8 YEARS)
+      { name: "100 PIPERS 12 YERS 750ML", price_30ml: "220", price_60ml: "420" },
+      { name: "100 PIPERS DELUX 750ML", price_30ml: "150", price_60ml: "290" },         // 🆕 NEW
+      { name: "TEACHERS HIGH LAND CREAM 750ML", price_30ml: "150", price_60ml: "290" },
+      { name: "BLACK & WHITE 750ML", price_30ml: "150", price_60ml: "290" },
+      { name: "RED LEBEL 750ML", price_30ml: "180", price_60ml: "340" },
+      { name: "BALLENTINES 750ML", price_30ml: "210", price_60ml: "410" },
+      { name: "DEWARS WHITE LEBEL 750ML", price_30ml: "150", price_60ml: "290" },       // 🆕 NEW
+      { name: "BLENDERS PRIDE RESERVE 750ML", price_30ml: "100", price_60ml: "180" },
+      { name: "TEACHERS 50 750ML", price_30ml: "210", price_60ml: "400" },
+      { name: "JAMESON IRISH 750ML", price_30ml: "180", price_60ml: "350" },
+      { name: "BLACK DOG GOLD RESERVE 750ML", price_30ml: "220", price_60ml: "420" }    // 🆕 NEW
     ]
   },
   {
     id: "indian-whisky",
     title: "INDIAN WHISKY",
     items: [
-      { name: "WILLIAM LAWSON", price_30ml: "130", price_60ml: "250" },
-      { name: "AMRUT AMALGAM", price_30ml: "240", price_60ml: "470" },
-      { name: "AMRUT FUSION", price_30ml: "220", price_60ml: "430" },
-      { name: "VATT 69", price_30ml: "150", price_60ml: "290" },
-      { name: "BLENDERS PRIDE", price_30ml: "90", price_60ml: "160" },
-      { name: "BLENDERS PRIDE RESERVE", price_30ml: "100", price_60ml: "180" },
-      { name: "DIWARS WHITE LABEL", price_30ml: "150", price_60ml: "290" }
+      { name: "AMRUT FUSION 750ML", price_30ml: "220", price_60ml: "430" },
+      { name: "AMRUT AMULGAM 750ML", price_30ml: "240", price_60ml: "470" }
     ]
   },
   {
-    id: "canadian-whisky",
-    title: "CANADIAN WHISKY",
+    id: "brandy",
+    title: "BRANDY",
+    // 🆕 Both items are NEW — not in old PDF
     items: [
-      { name: "JIM BEAM", price_30ml: "190", price_60ml: "380" },
-      { name: "JAMESON", price_30ml: "180", price_60ml: "350" },
-      { name: "BALENTINE", price_30ml: "210", price_60ml: "410" },
-      { name: "JACK DANIELS", price_30ml: "280", price_60ml: "560" }
-    ]
-  },
-  {
-    id: "vodka",
-    title: "VODKA",
-    items: [
-      { name: "ABSOLUTE", price_30ml: "180", price_60ml: "340" },
-      { name: "ABSOLUTE FLAVOURED ( ORANGE)", price_30ml: "120", price_60ml: "230" },
-      { name: "SMIRNOFF", price_30ml: "110", price_60ml: "220" },
-      { name: "SMIRNOFF FLAVOURED ( ORANGE)", price_30ml: "90", price_60ml: "160" },
-      { name: "ROMONAV", price_30ml: "90", price_60ml: "110" }
-    ]
-  },
-  {
-    id: "rum",
-    title: "RUM",
-    items: [
-      { name: "BACARDI WHITE RUM", price_30ml: "110", price_60ml: "210" },
-      { name: "BACARDI BLACK RUM", price_30ml: "110", price_60ml: "220" }
-    ]
-  },
-  {
-    id: "dark-rum",
-    title: "DARK RUM",
-    items: [
-      { name: "OLD MONK", price_30ml: "60", price_60ml: "110" },
-      { name: "OLD MONK LEGEND", price_30ml: "100", price_60ml: "180" },
-      { name: "OLD MONK SUPREME", price_30ml: "80", price_60ml: "140" },
-      { name: "CAPTAIN MORGAN", price_30ml: "60", price_60ml: "110" }
+      { name: "MANSION HOUSE 750ML", price_30ml: "70", price_60ml: "120" },             // 🆕 NEW
+      { name: "MORPHOUS XO PREMIUM 750ML", price_30ml: "110", price_60ml: "200" }       // 🆕 NEW
     ]
   },
   {
     id: "gin",
     title: "GIN",
     items: [
-      { name: "BEAFEATER", price_30ml: "190", price_60ml: "380" },
-      { name: "BOMBAY SAPPHIRE", price_30ml: "220", price_60ml: "420" },
-      { name: "BLUE RIBBON", price_30ml: "60", price_60ml: "120" }
+      { name: "BOMBAY SAPPHIRE 750ML", price_30ml: "220", price_60ml: "420" }
     ]
   },
   {
     id: "tequilla",
     title: "TEQUILLA",
     items: [
-      { name: "CAMINO SILVER", price_30ml: "220", price_60ml: "420" },
-      { name: "CAMINO GOLD", price_30ml: "220", price_60ml: "440" },
-      { name: "DON ANGEL", price_30ml: "220", price_60ml: "440" },
-      { name: "TEQUILLA WAREHOUSE", price_30ml: "150", price_60ml: "300" }
+      { name: "CAMINO REAL 750ML", price_30ml: "220", price_60ml: "420" }
     ]
   },
   {
-    id: "brandy",
-    title: "BRANDY",
+    id: "rum",
+    title: "RUM",
     items: [
-      { name: "HENNESSY MANSONHOUSE REMY MOUTINI", price_30ml: "70", price_60ml: "120" },
-      { name: "MORPHIS", price_30ml: "110", price_60ml: "200" }
+      { name: "OLD MONK XXX RUM 750ML", price_30ml: "60", price_60ml: "110" },
+      { name: "CAPTAIN MORGAN 750ML", price_30ml: "60", price_60ml: "110" },
+      { name: "OLD MONK LEGEND 750ML", price_30ml: "100", price_60ml: "180" },
+      { name: "BACARDI WHITE RUM 750ML", price_30ml: "110", price_60ml: "210" },
+      { name: "OLD MONK SUPREME 750ML", price_30ml: "80", price_60ml: "140" }
+    ]
+  },
+  {
+    id: "vodka",
+    title: "VODKA",
+    items: [
+      { name: "SMIRN OFF ORANGE 750ML", price_30ml: "90", price_60ml: "160" },          // 🆕 NEW
+      { name: "ABSOLUTE 750ML", price_30ml: "180", price_60ml: "340" },
+      { name: "MAGIC MOMENT GRAIN 750ML", price_30ml: "80", price_60ml: "140" }         // 🆕 NEW
     ]
   },
   {
     id: "wine",
     title: "WINE",
-    // Wine is priced per 150ml glass — single flat price
+    // Wine priced per 150ml glass — single flat price
     items: [
-      { name: "FRATELI FRENCH CABINET SERIES", price_150ml: "290" },
-      { name: "FRATELI CHADONI", price_150ml: "230" },
-      { name: "BIG BANIAN", price_150ml: "270" },
-      { name: "SULA RED WINE", price_150ml: "290" },
-      { name: "SULA WHITE WINE", price_150ml: "270" },
-      { name: "SPARKLING BROT NOI FRATELI", price_150ml: "1400" }
-    ]
-  },
-  {
-    id: "liquor",
-    title: "LIQUOR",
-    // Liqueurs — single flat price per serving
-    items: [
-      { name: "BAILEYS IRISH CREAM", price: "260" },
-      { name: "KHAULA COFFEE", price: "250" },
-      { name: "COINTRAU", price: "280" },
-      { name: "MARTINI", price: "220" },
-      { name: "MALIBU", price: "510" },
-      { name: "JAGERMASTER", price: "570" }
+      { name: "FREATELLI 750ML", price_150ml: "120" },
+      { name: "BIG BANYAN 750ML", price_150ml: "100" },
+      { name: "NOI 750ML", price_150ml: "110" }                                          // 🆕 NEW
     ]
   },
   {
     id: "beers",
     title: "BEERS",
-    // Beers — priced by bottle size (330ml / 650ml stated in item name)
+    // Beers — flat price per bottle, size stated in item name
     items: [
-      { name: "KF PREMIUM 650ML", price: "170" },
-      { name: "KF STRONG 650ML", price: "270" },
-      { name: "KF ULTRA 650ML", price: "320" },
-      { name: "BUDWEISER PREMIUM 650ML", price: "310" },
-      { name: "BUDWEISER MAGNUM 650ML", price: "380" },
+      { name: "K.F PRE 650ML", price: "170" },
+      { name: "K.F STRONG 650ML", price: "270" },
+      { name: "TUBORG GREEN 650ML", price: "220" },                                      // 🆕 NEW
+      { name: "BUD PRE 650ML", price: "310" },
+      { name: "K.F ULTRA 650ML", price: "230" },
+      { name: "BUD MAG 650ML", price: "380" },
+      { name: "ELEPHANT 650ML", price: "380" },
       { name: "TUBORG STRONG 650ML", price: "260" },
-      { name: "TUBORG PREMIUM 650ML", price: "220" },
-      { name: "CARLSBERG ELEPHANT 650ML", price: "380" },
-      { name: "KF PREMIUM 330ML", price: "90" },
-      { name: "KF STRONG 330ML", price: "180" },
-      { name: "BUDWEISER PREMIUM 330ML", price: "180" },
-      { name: "BUDWEISER MAGNUM 330ML", price: "220" },
+      { name: "HEOGARDEN 500ML CAN", price: "260" },
+      { name: "K.F PRE 330ML", price: "90" },
+      { name: "BUD PRE 330ML", price: "180" },
       { name: "CORONA 330ML", price: "200" },
-      { name: "HOEGARDEN 500 ML Can", price: "260" },
-      { name: "BREEZER CRANBERRY", price: "200" },
-      { name: "BREEZER BLACKBERRY", price: "200" },
-      { name: "BREEZER BLUEBERRY", price: "200" },
-      { name: "JAMECAN FASHION", price: "200" },
-      { name: "BACARDI ORANGE", price: "200" },
-      { name: "BACARDI +", price: "200" }
+      { name: "BUD MAG 330ML", price: "220" }
     ]
   },
   {
     id: "mocktails",
     title: "MOCKTAILS",
-    // Mocktails — single flat price per glass
+    // Single flat price per glass — no change
     items: [
       { name: "VIRGIN MERRY CASINO", price: "250" },
       { name: "KIWI - KWICK", price: "250" },
@@ -519,7 +473,6 @@ const drinksMenuSections = [
   {
     id: "cocktails-whisky-based",
     title: "COCKTAILS — WHISKY BASED",
-    // Cocktails — single flat price per glass
     items: [
       { name: "MANHATTAN PERFECT", price: "350" },
       { name: "TRACK LIGHTING", price: "350" },
@@ -605,7 +558,6 @@ const drinksMenuSections = [
   {
     id: "shots",
     title: "SHOTS",
-    // Shots — single flat price per shot
     items: [
       { name: "KAMI KAZE", price: "250" },
       { name: "BLUE KAMI KAZE", price: "250" },
@@ -618,7 +570,6 @@ const drinksMenuSections = [
   {
     id: "cold-zone",
     title: "COLD ZONE",
-    // Cold Zone — single flat price
     items: [
       { name: "MINERAL WATER 1LR", price: "40" },
       { name: "SODA 300ML", price: "40" },

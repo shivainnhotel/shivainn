@@ -99,6 +99,8 @@ export const images = {
     ],
   },
   gallery: [
+    "/bar/DSC01539_result.webp",
+    "/restaurant/DSC01455_result.webp",
     "/exterior/DSC01348_result.webp", // Hotel Front
     "/exterior/DSC00830_result.webp", // Building Exterior
     "/exterior/DSC01293_result.webp", // Entrance Night View
