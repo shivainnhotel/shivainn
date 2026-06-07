@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { GoogleAnalytics } from '@next/third-parties/google';
 import { LeadCapturePopup } from "./components/LeadCapturePopup";
 import "./globals.css";
 
@@ -155,6 +154,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-IN">
+      <head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-VY8QWEFE9Z"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-VY8QWEFE9Z');
+            `,
+          }}
+        />
+      </head>
       <body>
         <script
           type="application/ld+json"
@@ -163,7 +178,6 @@ export default function RootLayout({
         {children}
         <LeadCapturePopup />
       </body>
-      <GoogleAnalytics gaId="G-VY8QWEFE9Z" />
     </html>
   );
 }
