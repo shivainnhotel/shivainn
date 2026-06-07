@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { LeadCapturePopup } from "./components/LeadCapturePopup";
 import "./globals.css";
 
@@ -24,34 +25,28 @@ export const metadata: Metadata = {
     "Hotel Shiva Inn in Haveri, Karnataka offers elegant accommodation, multi-cuisine dining, bar and lounge experiences, and refined banquet venues on NH 48 Bypass Road.",
 
   keywords: [
-    // brand
     "hotel shiva inn",
     "hotel shiva inn haveri",
     "shiva inn haveri",
-    // direct hotel searches
     "hotels in haveri",
     "hotel in haveri karnataka",
     "best hotel in haveri",
     "luxury hotel in haveri",
     "premium hotel haveri",
     "top hotel haveri karnataka",
-    // highway / location
     "hotel on NH48 haveri",
     "hotel near NH 48 karnataka",
     "highway hotel haveri",
     "hotel bypass road haveri",
     "hotel near heggeri haveri",
-    // traveller types
     "business hotel haveri",
     "family hotel haveri",
     "hotel for corporate stay haveri",
     "hotel near haveri bus stand",
-    // amenities
     "ac hotel haveri",
     "hotel with wifi haveri",
     "hotel with parking haveri",
     "hotel with room service haveri",
-    // between cities
     "hotel between dharwad and davangere",
     "hotel between hubli and davangere",
     "hotel between dharwad and bangalore",
@@ -60,27 +55,22 @@ export const metadata: Metadata = {
     "stopover hotel NH48 karnataka",
     "overnight stay NH48 karnataka",
     "night halt hotel NH48",
-    // from Dharwad
     "hotel near dharwad on highway",
     "hotel 60km from dharwad",
     "hotel from dharwad towards bangalore",
     "stay near dharwad karnataka",
-    // from Davangere
     "hotel near davangere karnataka",
     "hotel 80km from davangere",
     "hotel from davangere towards hubli",
     "stay between davangere and hubli",
     "hotel davangere to dharwad route",
-    // Hubli
     "hotel near hubli karnataka",
     "hotel 60km from hubli",
     "hotel hubli to bangalore highway",
-    // road trip
     "road trip hotel karnataka NH48",
     "highway stay karnataka",
     "mumbai bangalore highway hotel karnataka",
     "pune bangalore highway hotel haveri",
-    // north karnataka
     "hotel in north karnataka",
     "hotels near hubli haveri",
     "stay in haveri district",
@@ -173,6 +163,7 @@ export default function RootLayout({
         {children}
         <LeadCapturePopup />
       </body>
+      <GoogleAnalytics gaId="G-VY8QWEFE9Z" />
     </html>
   );
 }
