@@ -1,7 +1,93 @@
+import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import { ManualSlider } from "@/app/components/ManualSlider";
 import { SiteHeader } from "@/app/components/SiteHeader";
 import { images } from "@/lib/images";
+
+export const metadata: Metadata = {
+  title: "Restaurant & Multi-Cuisine Dining in Haveri | Hotel Shiva Inn",
+  description:
+    "Multi-cuisine veg and non-veg restaurant at Hotel Shiva Inn, Haveri. South Indian, North Indian and Chinese dining with premium hospitality for families and business guests on NH 48.",
+  keywords: [
+    "hotel shiva inn restaurant",
+    "shiva inn dining haveri",
+    "restaurant in haveri",
+    "restaurants in haveri karnataka",
+    "best restaurant haveri",
+    "hotel restaurant haveri",
+    "veg restaurant haveri",
+    "pure veg restaurant haveri",
+    "vegetarian restaurant haveri karnataka",
+    "south indian restaurant haveri",
+    "north indian restaurant haveri",
+    "chinese food haveri",
+    "multi cuisine restaurant haveri",
+    "lunch haveri",
+    "dinner haveri karnataka",
+    "family restaurant haveri",
+    "corporate lunch haveri",
+    "business lunch haveri karnataka",
+    "restaurant on NH48 karnataka",
+    "highway restaurant haveri",
+    "restaurant near dharwad on NH48",
+    "restaurant between dharwad and davangere",
+    "highway restaurant near hubli karnataka",
+    "veg restaurant near dharwad highway",
+    "food stop NH48 karnataka",
+    "best food between hubli and davangere",
+    "restaurant near davangere on highway",
+    "lunch stop NH48 karnataka",
+    "dinner stop mumbai bangalore highway",
+    "good restaurant north karnataka",
+    "restaurant near dharwad haveri",
+    "restaurant near hubli on highway",
+  ],
+  alternates: { canonical: "https://shivainn.com/dining" },
+  openGraph: {
+    title: "Restaurant & Dining | Hotel Shiva Inn Haveri",
+    description:
+      "Pure veg and multi-cuisine dining in Haveri, Karnataka. South Indian, North Indian and Chinese meals with warm hospitality on NH 48.",
+    url: "https://shivainn.com/dining",
+    images: [
+      {
+        url: "/images/bardining.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Restaurant at Hotel Shiva Inn Haveri",
+      },
+    ],
+  },
+};
+
+const diningSchema = {
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  name: "Hotel Shiva Inn Restaurant",
+  url: "https://shivainn.com/dining",
+  telephone: "+916360644158",
+  servesCuisine: ["South Indian", "North Indian", "Chinese", "Vegetarian"],
+  priceRange: "₹₹",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Bypass Road, Near Heggeri",
+    addressLocality: "Haveri",
+    addressRegion: "Karnataka",
+    postalCode: "581110",
+    addressCountry: "IN",
+  },
+  containedInPlace: {
+    "@type": "Hotel",
+    name: "Hotel Shiva Inn",
+    url: "https://shivainn.com",
+  },
+  amenityFeature: [
+    { "@type": "LocationFeatureSpecification", name: "Pure Veg Option", value: true },
+    { "@type": "LocationFeatureSpecification", name: "Air Conditioned", value: true },
+    { "@type": "LocationFeatureSpecification", name: "Family Seating", value: true },
+    { "@type": "LocationFeatureSpecification", name: "Room Service", value: true },
+    { "@type": "LocationFeatureSpecification", name: "Group Seating", value: true },
+  ],
+};
 
 const features = [
   "Multi-cuisine veg and non-veg dining",
@@ -66,6 +152,11 @@ export default function DiningPage() {
           <DetailBlock title="Amenities" items={amenities} />
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(diningSchema) }}
+      />
     </main>
   );
 }

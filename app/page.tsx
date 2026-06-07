@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import {
   ChevronLeft,
   ChevronRight,
+  Instagram,
   MapPin,
   Menu,
   Phone,
@@ -418,6 +419,7 @@ export default function Home() {
             <a href={`tel:${phone}`}><Phone size={17} />Call Now</a>
             <a href={`https://wa.me/${phone}`}><Sparkles size={17} />WhatsApp</a>
             <a href={mapsUrl} target="_blank" rel="noopener noreferrer"><MapPin size={17} />Get Directions</a>
+            <a href="https://www.instagram.com/hotelshiva_inn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><Instagram size={17} />Instagram</a>
           </div>
         </div>
       </section>
