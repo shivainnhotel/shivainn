@@ -437,7 +437,7 @@ const drinksMenuSections = [
       { name: "TUBORG GREEN 650ML", price: "220" },                                      // 🆕 NEW
       { name: "BUD PRE 650ML", price: "310" },
       { name: "K.F ULTRA 650ML", price: "230" },
-      { name: "BUD MAG 650ML", price: "380" },
+      { name: "BUD MAG 650ML", price: "340" },
       { name: "ELEPHANT 650ML", price: "380" },
       { name: "TUBORG STRONG 650ML", price: "260" },
       { name: "HEOGARDEN 500ML CAN", price: "260" },
