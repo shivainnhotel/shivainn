@@ -338,18 +338,24 @@ export default function Home() {
       <section id="about" className="section about-editorial">
         <div className="split">
           <div className="image-frame tall">
-            <Image src={images.exterior} alt="Hotel Shiva Inn exterior" fill sizes="(max-width: 900px) 100vw, 50vw" placeholder="blur" blurDataURL={blurData} />
+            <Image src={images.exterior} alt="Hotel Shiva Inn exterior on NH 48 Bypass Road, Haveri" fill sizes="(max-width: 900px) 100vw, 50vw" placeholder="blur" blurDataURL={blurData} />
           </div>
           <div className="content-stack editorial-copy">
             <h2>ABOUT SHIVA INN</h2>
             <p>
-              Hotel Shiva Inn is located on Bypass Road near Heggeri, Haveri and offers elegant accommodation, dining experiences, banquet facilities and warm hospitality for business travellers, families and guests visiting Haveri.
+              Hotel Shiva Inn is on Bypass Road, near Heggeri, Haveri — right on NH 48 between Hubli and Davangere. It is easy to reach whether you are driving from Dharwad, Hubli, or Davangere.
             </p>
             <p>
-              The property features well-appointed rooms, multi-cuisine dining, vegetarian dining options, a signature bar & lounge and event spaces suitable for meetings, celebrations and family gatherings.
+              We have four room types — Junior Suite, Deluxe Room, Suite Room, and Deluxe Twin Bed Room. All rooms have AC, hot water, flat-screen TV, high-speed Wi-Fi, and daily housekeeping. Room service is available 24 hours.
             </p>
             <p>
-              Designed to combine comfort, convenience and hospitality, Hotel Shiva Inn provides a refined stay experience for both leisure and business guests.
+              Our restaurant serves South Indian, North Indian, and Chinese food — both veg and non-veg. We also offer a pure veg menu. The bar and lounge is a quiet space for business guests and social evenings.
+            </p>
+            <p>
+              For events, we have three venues — Lotus Hall (up to 200 guests), Pearl Hall (up to 100 guests), and a Board Room (up to 30 guests). We host weddings, receptions, corporate meetings, and family celebrations.
+            </p>
+            <p>
+              Check-in is at 12:00 PM. Check-out is at 11:00 AM. Free parking is available on the property.
             </p>
           </div>
         </div>
@@ -411,10 +417,16 @@ export default function Home() {
           <iframe title="Hotel Shiva Inn map" src="https://www.google.com/maps?q=Bypass%20Road%20Near%20Heggeri%20Haveri%20Karnataka&output=embed" loading="lazy" />
         </div>
         <div className="location-card">
-          <p className="eyebrow">Location</p>
+          <p className="eyebrow">Location & Contact</p>
           <h2>Hotel Shiva Inn</h2>
-          <p>Bypass Road, Near Heggeri, Haveri, Karnataka</p>
+          <p>Bypass Road, Near Heggeri, Haveri, Karnataka — 581110</p>
           <p>{displayPhone}</p>
+          <p style={{ fontSize: "0.9rem", marginTop: "0.5rem" }}>
+            <strong>Check-in:</strong> 12:00 PM &nbsp;|&nbsp; <strong>Check-out:</strong> 11:00 AM
+          </p>
+          <p style={{ fontSize: "0.9rem" }}>
+            <strong>How to reach:</strong> On NH 48 Bypass Road, Haveri. 60 km from Hubli, 80 km from Davangere, 120 km from Dharwad. Free parking on property.
+          </p>
           <div className="action-row">
             <a href={`tel:${phone}`}><Phone size={17} />Call Now</a>
             <a href={`https://wa.me/${phone}`}><Sparkles size={17} />WhatsApp</a>

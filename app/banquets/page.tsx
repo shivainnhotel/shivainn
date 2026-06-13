@@ -1,7 +1,72 @@
+import type { Metadata } from "next";
 import { Check, ChevronRight } from "lucide-react";
 import { ManualSlider } from "@/app/components/ManualSlider";
 import { SiteHeader } from "@/app/components/SiteHeader";
 import { images } from "@/lib/images";
+
+export const metadata: Metadata = {
+  title: "Banquet Hall & Event Venues in Haveri",
+  description:
+    "Book Lotus Hall, Pearl Hall or Board Room at Hotel Shiva Inn, Haveri. Banquet venues for weddings, conferences & celebrations on NH 48.",
+  keywords: [
+    "banquet hall haveri",
+    "wedding venue haveri",
+    "event hall haveri karnataka",
+    "banquet hall hotel haveri",
+    "corporate event venue haveri",
+    "conference hall haveri",
+    "birthday celebration venue haveri",
+    "reception hall haveri karnataka",
+    "party hall haveri",
+    "function hall haveri",
+    "hotel shiva inn banquet",
+    "shiva inn lotus hall",
+    "shiva inn pearl hall",
+    "board room haveri",
+    "meeting room haveri",
+    "banquet hall NH48 karnataka",
+    "wedding hall north karnataka",
+    "event venue near dharwad",
+    "banquet near hubli karnataka",
+    "celebration venue haveri district",
+  ],
+  alternates: { canonical: "https://shivainn.com/banquets" },
+  openGraph: {
+    title: "Banquet Hall & Event Venues | Hotel Shiva Inn Haveri",
+    description:
+      "Lotus Hall (200 guests), Pearl Hall (100 guests) & Board Room at Hotel Shiva Inn, Haveri. Book for weddings, receptions & corporate events.",
+    url: "https://shivainn.com/banquets",
+    images: [
+      {
+        url: "/images/exterior.webp",
+        width: 1200,
+        height: 630,
+        alt: "Banquet Hall at Hotel Shiva Inn Haveri",
+      },
+    ],
+  },
+};
+
+const banquetSchema = {
+  "@context": "https://schema.org",
+  "@type": "EventVenue",
+  name: "Hotel Shiva Inn Banquet Hall",
+  url: "https://shivainn.com/banquets",
+  telephone: "+916360644158",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Bypass Road, Near Heggeri",
+    addressLocality: "Haveri",
+    addressRegion: "Karnataka",
+    postalCode: "581110",
+    addressCountry: "IN",
+  },
+  containedInPlace: {
+    "@type": "Hotel",
+    name: "Hotel Shiva Inn",
+    url: "https://shivainn.com",
+  },
+};
 
 const phone = "+916360644158";
 
@@ -60,6 +125,7 @@ export default function BanquetsPage() {
       <section id="banquets" className="section service-page">
         <div className="section-heading">
           <p className="eyebrow">Banquets & Events</p>
+          <h1>Banquet Hall & Event Venues in Haveri | Hotel Shiva Inn</h1>
           <h2>Banquet Venues</h2>
           <p className="section-description">
             Hotel Shiva Inn offers elegant banquet spaces for weddings, receptions, conferences,
@@ -104,6 +170,11 @@ export default function BanquetsPage() {
           ))}
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(banquetSchema) }}
+      />
     </main>
   );
 }

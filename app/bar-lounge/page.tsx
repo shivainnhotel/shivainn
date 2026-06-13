@@ -7,7 +7,7 @@ import { images } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Bar & Lounge in Haveri | Hotel Shiva Inn",
   description:
-    "Premium bar and lounge at Hotel Shiva Inn, Haveri. Sophisticated ambience for business conversations, social evenings and relaxed celebrations on NH 48 Bypass Road.",
+    "Premium bar & lounge at Hotel Shiva Inn, Haveri. AC seating, warm service — ideal for business evenings & social gatherings on NH 48.",
   keywords: [
     "hotel shiva inn bar",
     "shiva inn lounge haveri",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     url: "https://shivainn.com/bar-lounge",
     images: [
       {
-        url: "/images/bardining.jpg",
+        url: "/images/bardining.webp",
         width: 1200,
         height: 630,
         alt: "Bar and Lounge at Hotel Shiva Inn Haveri",
@@ -110,6 +110,7 @@ export default function BarLoungePage() {
       <section id="bar-lounge" className="section service-page">
         <div className="section-heading">
           <p className="eyebrow">Bar & Lounge</p>
+          <h1>Bar & Lounge in Haveri | Hotel Shiva Inn</h1>
           <h2>Premium lounge evenings in a sophisticated setting.</h2>
         </div>
 
@@ -126,14 +127,13 @@ export default function BarLoungePage() {
         <div className="service-content">
           <div className="content-stack">
             <p className="lead">
-              The Bar & Lounge at Hotel Shiva Inn is designed for guests who value comfort,
-              privacy and a polished hospitality experience. The ambience is sophisticated
-              without feeling formal, making it suitable for business conversations, social
-              evenings and relaxed celebrations.
+              The Bar & Lounge at Hotel Shiva Inn is a comfortable, air-conditioned space for guests
+              who want to relax after a long drive or have a quiet conversation over drinks.
+              It works well for business meetings, small group gatherings, and casual evenings.
             </p>
             <p className="lead">
-              Comfortable seating, warm service and a premium lounge mood create an inviting
-              space for both hotel guests and visitors.
+              The seating is comfortable, the service is prompt, and the setting is calm without
+              being too formal. Both hotel guests and walk-in visitors are welcome.
             </p>
           </div>
 

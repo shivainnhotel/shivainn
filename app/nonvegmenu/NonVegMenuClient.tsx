@@ -600,8 +600,8 @@ type MenuSection = {
 
 const assets = {
   logo: "/logodark.png",
-  hero: "/images/bardining.jpg",
-  fallback: "/images/bardining.jpg",
+  hero: "/images/bardining.webp",
+  fallback: "/images/bardining.webp",
 };
 
 const SECTION_IMAGES: Record<string, string> = {
@@ -657,7 +657,7 @@ const SECTION_IMAGES: Record<string, string> = {
   "cold-zone": "https://images.unsplash.com/photo-1640317455707-d83d8d2e938f?w=600&auto=format&fit=crop&q=60",
 };
 
-const FALLBACK_IMAGE = "/images/bardining.jpg";
+const FALLBACK_IMAGE = "/images/bardining.webp";
 
 function sectionImage(section: MenuSection) {
   return SECTION_IMAGES[section.id] ?? FALLBACK_IMAGE;

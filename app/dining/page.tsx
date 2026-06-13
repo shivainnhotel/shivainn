@@ -5,9 +5,9 @@ import { SiteHeader } from "@/app/components/SiteHeader";
 import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Restaurant & Multi-Cuisine Dining in Haveri | Hotel Shiva Inn",
+  title: "Multi-Cuisine Restaurant in Haveri",
   description:
-    "Multi-cuisine veg and non-veg restaurant at Hotel Shiva Inn, Haveri. South Indian, North Indian and Chinese dining with premium hospitality for families and business guests on NH 48.",
+    "South Indian, North Indian & Chinese dining at Hotel Shiva Inn, Haveri. Pure veg & non-veg restaurant on NH 48. Family and corporate meals.",
   keywords: [
     "hotel shiva inn restaurant",
     "shiva inn dining haveri",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     url: "https://shivainn.com/dining",
     images: [
       {
-        url: "/images/bardining.jpg",
+        url: "/images/bardining.webp",
         width: 1200,
         height: 630,
         alt: "Restaurant at Hotel Shiva Inn Haveri",
@@ -119,6 +119,7 @@ export default function DiningPage() {
       <section id="dining" className="section service-page">
         <div className="section-heading">
           <p className="eyebrow">Dining Experience</p>
+          <h1>Restaurant & Dining at Hotel Shiva Inn, Haveri</h1>
           <h2>Pure Veg & Multi-cuisine dining with warm Shiva Inn hospitality.</h2>
         </div>
 
@@ -135,15 +136,12 @@ export default function DiningPage() {
         <div className="service-content">
           <div className="content-stack">
             <p className="lead">
-              Hotel Shiva Inn offers a refined multi-cuisine dining experience for families,
-              business travellers and corporate guests. Fresh ingredients, attentive service
-              and comfortable interiors create a relaxed setting for both vegetarian and
-              non-vegetarian meals.
+              Our restaurant serves South Indian, North Indian, and Chinese food — both veg and non-veg.
+              We use fresh ingredients and cook to order. Families, business guests, and groups are all welcome.
             </p>
             <p className="lead">
-              The restaurant brings together South Indian comfort, North Indian favourites
-              and Chinese selections with the premium hospitality expected from a hotel dining
-              experience.
+              Whether you want a quick lunch on the highway or a sit-down dinner, our team is ready to serve you.
+              A pure veg menu is always available. Room service runs 24 hours for hotel guests.
             </p>
           </div>
 

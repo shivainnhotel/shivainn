@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Hotel Shiva Inn in Haveri, Karnataka offers elegant accommodation, multi-cuisine dining, bar and lounge experiences, and refined banquet venues on NH 48 Bypass Road.",
+    "AC rooms, multi-cuisine dining, bar lounge & banquet hall at Hotel Shiva Inn, Haveri — on NH 48 Bypass Road. Book your stay today.",
 
   keywords: [
     "hotel shiva inn",
