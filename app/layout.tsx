@@ -7,9 +7,9 @@ export const metadata: Metadata = {
 
   icons: {
     icon: [
-      { url: "/favicon.ico" },                          // ✓ already there
-      { url: "/favicon-16x16.png", sizes: "16x16" },   // add these
-      { url: "/favicon-32x32.png", sizes: "32x32" },   // add these
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16" },
+      { url: "/favicon-32x32.png", sizes: "32x32" },
     ],
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     url: "https://shivainn.com",
     images: [
       {
-        url: "/images/exterior.jpg",
+        url: "/images/exterior.webp",
         width: 1200,
         height: 630,
         alt: "Hotel Shiva Inn Haveri exterior",
@@ -101,8 +101,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hotel Shiva Inn Haveri",
     description:
-      "Elegant accommodation, dining, lounge and banquet experiences in Haveri, Karnataka.",
-    images: ["/images/exterior.jpg"],
+      "AC rooms, dining, bar lounge & banquet hall at Hotel Shiva Inn, Haveri — on NH 48.",
+    images: ["/images/exterior.webp"],
   },
 
   manifest: "/site.webmanifest",
@@ -130,7 +130,7 @@ const hotelSchema = {
     latitude: 14.7959,
     longitude: 75.3997,
   },
-  image: "https://shivainn.com/images/exterior.jpg",
+  image: "https://shivainn.com/images/exterior.webp",
   priceRange: "₹₹",
   checkinTime: "12:00",
   checkoutTime: "11:00",
