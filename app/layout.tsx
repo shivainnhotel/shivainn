@@ -7,9 +7,9 @@ export const metadata: Metadata = {
 
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/web-app-manifest-192x192.png", sizes: "192x192", type: "image/png" },
-      { url: "/web-app-manifest-512x512.png", sizes: "512x512", type: "image/png" },
+      { url: "/favicon.ico" },                          // ✓ already there
+      { url: "/favicon-16x16.png", sizes: "16x16" },   // add these
+      { url: "/favicon-32x32.png", sizes: "32x32" },   // add these
     ],
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
