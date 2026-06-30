@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   },
 
   title: {
-    default: "Hotel Shiva Inn Haveri | Luxury Stay, Dining & Banquets",
+    default: "Hotel Shiva Inn Haveri | Premium Rooms, Dining & Bar (Bypass Road)",
     template: "%s | Hotel Shiva Inn",
   },
 
   description:
-    "AC rooms, multi-cuisine dining, bar lounge & banquet hall at Hotel Shiva Inn, Haveri — on NH 48 Bypass Road. Book your stay today.",
+    "Hotel Shiva Inn in Haveri, Karnataka — AC rooms, multi-cuisine dining, bar lounge, photos & banquet hall on NH 48 Bypass Road. Book your stay today.",
 
   keywords: [
     "hotel shiva inn",

@@ -5,9 +5,9 @@ import { SiteHeader } from "@/app/components/SiteHeader";
 import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Multi-Cuisine Restaurant in Haveri",
+  title: "Dining at Hotel Shiva Inn Haveri | Fresh Cuisines & Ambiance",
   description:
-    "South Indian, North Indian & Chinese dining at Hotel Shiva Inn, Haveri. Pure veg & non-veg restaurant on NH 48. Family and corporate meals.",
+    "Discover multi-cuisine dining at Hotel Shiva Inn, Haveri. South Indian, North Indian & Chinese — fresh food, warm hospitality on NH 48.",
   keywords: [
     "hotel shiva inn restaurant",
     "shiva inn dining haveri",

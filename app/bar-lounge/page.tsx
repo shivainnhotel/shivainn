@@ -5,9 +5,9 @@ import { SiteHeader } from "@/app/components/SiteHeader";
 import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
-  title: "Bar & Lounge in Haveri | Hotel Shiva Inn",
+  title: "Bar & Lounge in Haveri | Premium Drinks & Ambiance",
   description:
-    "Premium bar & lounge at Hotel Shiva Inn, Haveri. AC seating, warm service — ideal for business evenings & social gatherings on NH 48.",
+    "Premium bar & lounge at Hotel Shiva Inn, Haveri. Comfortable AC seating, prompt service — ideal for business evenings & gatherings on NH 48.",
   keywords: [
     "hotel shiva inn bar",
     "shiva inn lounge haveri",

@@ -1545,3 +1545,32 @@ footer nav {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* Mandala watermark - very big, centered in gap, behind text/images but visible */
+#rooms {
+  position: relative;
+  overflow: visible;
+}
+
+#rooms::after {
+  content: '';
+  position: absolute;
+  top: -600px;
+  left: -380px;
+  width: 900px;
+  height: 900px;
+  background: url('/mandala.webp') center center / contain no-repeat;
+  opacity: 0.07;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#rooms>* {
+  position: relative;
+  z-index: 2;
+}
+
+.about-editorial .split {
+  position: relative;
+  z-index: 2;
+}
