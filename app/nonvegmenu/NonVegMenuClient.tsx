@@ -576,7 +576,7 @@ const drinksMenuSections = [
       { name: "SOFT DRINKS", price: "40" },
       { name: "TONIC WATER", price: "100" },
       { name: "GINGER ALE", price: "100" },
-      { name: "RED BULL", price: "130" },
+      { name: "RED JUICE", price: "130" },
       { name: "FRESH LIME WATER", price: "90" },
       { name: "FRESH LIME SODA", price: "100" }
     ]
