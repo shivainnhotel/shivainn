@@ -155,7 +155,7 @@ const nonVegMenuSections = [
     title: "NORTH INDIAN NON VEG STARTERS",
     items: [
       { name: "CHICKEN FRY / CHICKEN PEPPER FRY", price: "320/330" },
-      { name: "MUTTON FRY / MUTTON PEPPER FRY", price: "280/280" },
+      { name: "MUTTON FRY / MUTTON PEPPER FRY", price: "350/350" },
       { name: "EGG FRY / EGG PEPPER FRY / EGG PAKODA", price: "210/210" },
       { name: "EGG OMELET / EGG BURJI", price: "120/130" },
       { name: "BOILED EGG", price: "80" },
