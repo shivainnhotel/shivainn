@@ -69,7 +69,7 @@ const nonVegMenuSections = [
     title: "NORTHA INDIAN SHORBA NON VEG",
     items: [
       { name: "CHICKEN SHORBA", price: "140" },
-      { name: "MUTTON SHORBA", price: "170" }
+      { name: "MUTTON SHORBA", price: "200" }
     ]
   },
   {
