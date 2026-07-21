@@ -37,7 +37,7 @@ const nonVegMenuSections = [
       { name: "CHICKEN LEMON CORIANDER SOUP", price: "160" },
       { name: "CHICKEN LUNG FUNG SOUP", price: "160" },
       { name: "CHICKEN CLEAR SOUP", price: "150" },
-      { name: "MUTTON CLEAR SOUP", price: "170" }
+      { name: "MUTTON CLEAR SOUP", price: "210" }
     ]
   },
   {
@@ -69,15 +69,15 @@ const nonVegMenuSections = [
     title: "NORTHA INDIAN SHORBA NON VEG",
     items: [
       { name: "CHICKEN SHORBA", price: "140" },
-      { name: "MUTTON SHORBA", price: "200" }
+      { name: "MUTTON SHORBA", price: "210" }
     ]
   },
   {
     id: "veg-chinese-starters",
     title: "VEG CHINESE STARTERS",
     items: [
-      { name: "MUSHROOM : CHILLY / 65 / PEPPER DRY / MANCHURIAN", price: "240" },
-      { name: "PANEER : CHILLY / 65 / PEPPER DRY / MANCHURIAN", price: "250" },
+      { name: "MUSHROOM : CHILLY / 65 / PEPPER DRY / MANCHURIAN", price: "272" },
+      { name: "PANEER : CHILLY / 65 / PEPPER DRY / MANCHURIAN", price: "270" },
       { name: "BABYCORN : CHILLY / 65 / PEPPER DRY / MANCHURIAN", price: "230" },
       { name: "VEG BALL : CHILLY / 65 / PEPPER DRY / MANCHURIAN", price: "230" },
       { name: "CRISPY FRIED BABYCORN", price: "230" },
@@ -134,18 +134,18 @@ const nonVegMenuSections = [
       { name: "BANGUDE / TAWA / RAWA / MASALA FRY / CURRY", price: "SEASONAL" },
       { name: "PRAWNS / TAWA /RAWA / MASALA FRY / CURRY", price: "SEASONAL" },
       { name: "SILVER FISH / RAWA / TAWA / CURRY", price: "SEASONAL" },
-      { name: "MUTTON GHEE ROAST / MUTTON SUKKA", price: "500 / 480" },
-      { name: "CHICKEN GHEE ROAST / CHICKEN SUKKA", price: "450 / 400" },
+      { name: "MUTTON GHEE ROAST / MUTTON SUKKA", price: "473 / 452" },
+      { name: "CHICKEN GHEE ROAST / CHICKEN SUKKA", price: "368 / 315" },
       { name: "PRAWNS GHEE ROAST", price: "500" },
-      { name: "FISH GHEE ROAST", price: "450" },
-      { name: "CHICKEN TAWA ROAST", price: "330" }
+      { name: "FISH GHEE ROAST", price: "420" },
+      { name: "CHICKEN TAWA ROAST", price: "315" }
     ]
   },
   {
     id: "north-indian-veg-starters",
     title: "NORTH INDIAN VEG STARTERS",
     items: [
-      { name: "MUSHROOM PEPPER FRY", price: "260" },
+      { name: "MUSHROOM PEPPER FRY", price: "272" },
       { name: "PANEER PEPPER FRY", price: "270" },
       { name: "GOBI PEPPER FRY", price: "250" }
     ]
@@ -154,8 +154,8 @@ const nonVegMenuSections = [
     id: "north-indian-non-veg-starters",
     title: "NORTH INDIAN NON VEG STARTERS",
     items: [
-      { name: "CHICKEN FRY / CHICKEN PEPPER FRY", price: "320/330" },
-      { name: "MUTTON FRY / MUTTON PEPPER FRY", price: "350/350" },
+      { name: "CHICKEN FRY / CHICKEN PEPPER FRY", price: "320/263" },
+      { name: "MUTTON FRY / MUTTON PEPPER FRY", price: "368/368" },
       { name: "EGG FRY / EGG PEPPER FRY / EGG PAKODA", price: "210/210" },
       { name: "EGG OMELET / EGG BURJI", price: "120/130" },
       { name: "BOILED EGG", price: "80" },
@@ -186,7 +186,7 @@ const nonVegMenuSections = [
       { name: "MURGH PESHAWARI KEBAB", price: "350" },
       { name: "MURGH PAHADI KEBAB", price: "350" },
       { name: "KALMI KEBAB(2 PIECES)", price: "350" },
-      { name: "MURGH AFGHANI KEBAB", price: "350" },
+      { name: "MURGH AFGHANI KEBAB", price: "410" },
       { name: "MURGH RESHMI KABAB", price: "370" },
       { name: "TANDOORI PRAWNS", price: "500" },
       { name: "PRAWN KALI MIRCH TIKKA", price: "500" },
@@ -297,7 +297,7 @@ const nonVegMenuSections = [
     title: "NON VEG COSTAL CURRY",
     items: [
       { name: "EGG CURRY", price: "260" },
-      { name: "CHICKEN KUNDAPURI", price: "350" },
+      { name: "CHICKEN KUNDAPURI", price: "399" },
       { name: "MUTTON KUNDAPURI", price: "500" },
       { name: "PRAWN CURRY", price: "500" }
     ]
