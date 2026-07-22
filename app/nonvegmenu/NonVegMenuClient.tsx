@@ -200,7 +200,7 @@ const nonVegMenuSections = [
     items: [
       { name: "VEG AMERICAN CHOPSY", price: "300" },
       { name: "VEG TREPAL SCHEZWAN FRID RICE", price: "300" },
-      { name: "VEG HAKKA NOODLES / SCHEZWAN", price: "250 / 260" },
+      { name: "VEG HAKKA NOODLES / SCHEZWAN", price: "250 / 242" },
       { name: "PANEER NOODLES / SCHEZWAN", price: "260 / 270" },
       { name: "MUSHROOM NOODLES / SCHEZWAN", price: "260 / 270" },
       { name: "VEG FRID RICE /SCHEZWAN", price: "240/ 250" },
@@ -235,25 +235,26 @@ const nonVegMenuSections = [
     items: [
       { name: "VEG KADAI / VEG KOLHAPURI", price: "250/260" },
       { name: "VEG HYEDRABADI / VEG LABABDAR", price: "270/280" },
-      { name: "SUBZI DIWANI HANDI / VEG JAIPURI", price: "270/280" },
-      { name: "VEG ZALFRIEZI / VEG DOPEZA", price: "260/270" },
-      { name: "VEG KOFTHA / MALAI KOFTA", price: "300/ 320" },
+      { name: "SUBZI DIWANI HANDI / VEG JAIPURI", price: "270/240" },
+      { name: "VEG ZALFRIEZI / VEG DOPEZA", price: "230/270" },
+      { name: "VEG KOFTHA / MALAI KOFTA", price: "294/ 320" },
       { name: "PLAIN PALAK / PALAK PANEER", price: "280 / 290" },
       { name: "PANEER TIKKA MASALA / PANEER BUTTER MASALA", price: "300 / 300" },
       { name: "PANEER HYEDRABADI / PANEER KOLHAPURI", price: "320 / 300" },
       { name: "VEG SHAHI KURMA / PANEER SHAHI KURMA", price: "290 / 330" },
       { name: "KAJU MASALA / PANEER KAJU MASALA", price: "300/ 350" },
-      { name: "DAL FRY / DAL KOLAPURI / DAL TADKA / BUTTER DAL FRY", price: "240" }
+      { name: "DAL FRY / DAL KOLAPURI / BUTTER DAL FRY", price: "206" },
+      { name: "DAL TADKA", price: "221" }
     ]
   },
   {
     id: "north-indian-non-veg-gravy",
     title: "NORTH INDIAN NON VEG  GRAVY",
     items: [
-      { name: "CHICKEN MASALA / CHICKEN KOLHAPURI", price: "290/ 300" },
+      { name: "CHICKEN MASALA / CHICKEN KOLHAPURI", price: "441/ 300" },
       { name: "CHICKEN KADAI / CHICKEN HYDRABADI", price: "300/350" },
       { name: "CHICKEN LABABDAR / CHICKEN TIKKA MASAL", price: "320/350" },
-      { name: "BUTTER CHICKEN / CHICKEN CHETTINAD", price: "350/360" },
+      { name: "BUTTER CHICKEN / CHICKEN CHETTINAD", price: "399/360" },
       { name: "CHICKEN RARA / CHCIKEN LAL MIRCH MASAL", price: "320/ 350" },
       { name: "MUTTON MASALA/ KADHAI / KHOLAPURI", price: "450" },
       { name: "MUTTON RARA / MUTTON ROGAN JOSH", price: "470/500" },
@@ -307,7 +308,7 @@ const nonVegMenuSections = [
     title: "INDIAN BREADS",
     items: [
       { name: "ROTI / BUTTER ROTI", price: "40/50" },
-      { name: "NAAN / BUTTER NAAN", price: "50/60" },
+      { name: "NAAN / BUTTER NAAN", price: "63/60" },
       { name: "GARLIC NAAN / BUTTER GARLIC NAAN", price: "60/70" },
       { name: "MISSI ROTI", price: "70" },
       { name: "LAAL MIRCH ROTI", price: "50" },
@@ -326,15 +327,14 @@ const nonVegMenuSections = [
     title: "DESSERTS",
     items: [
       { name: "CHOICE OF ICECREAMS( FLAVOURED)", price: "90" },
-      { name: "FRIED ICECREAM", price: "250" },
+      { name: "FRIED ICECREAM", price: "236" },
       { name: "HOT CHOCOLATE  FLAZED", price: "200" },
-      { name: "GADBAD ICECREAM", price: "250" },
-      { name: "BROWNIE ICECREAM", price: "250" },
-      { name: "GAJAR KA HALWA", price: "110" },
-      { name: "FRUIT SALAD WITH ICECREAM", price: "180" },
+      { name: "GADBAD ICECREAM", price: "236" },
+      { name: "BROWNIE ICECREAM", price: "236" },
+      { name: "GAJAR KA HALWA", price: "95" },
+      { name: "FRUIT SALAD WITH ICECREAM", price: "177" },
       { name: "DRY FRUIT WITH ICECREAM", price: "280" },
-      { name: "GULAB JAMUN", price: "90" },
-      { name: "GULAB JAMUN", price: "180" },
+      { name: "GULAB JAMUN", price: "84" },
       { name: "GAJAR KA HALWA WITH ICECREAM", price: "190" },
       { name: "CHOICES OF MILKSHAKES", price: "180" },
       { name: "CHOICES OF FRESH FRUIT JUICES", price: "110" }
