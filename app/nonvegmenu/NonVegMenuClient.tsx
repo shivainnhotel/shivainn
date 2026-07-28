@@ -694,27 +694,33 @@ function cleanDrinkName(name: string) {
   return name.replace(/\s*\b750\s*ml\b/gi, "").replace(/\s{2,}/g, " ").trim();
 }
 
-function hasTwoServingPrices(section: MenuSection) {
+function hasMultiServingPrices(section: MenuSection) {
   return section.items.length > 0 && section.items.every((item) =>
-    item.price_30ml && item.price_60ml && !item.price && !item.price_150ml
+    item.price_750ml && !item.price && !item.price_150ml
   );
 }
 
 function formatPrice(item: MenuItem, useServingColumns = false) {
-  if (item.price_30ml || item.price_60ml) {
+  if (item.price_750ml) {
     if (useServingColumns) {
       return (
         <span className="drink-price drink-price--columns">
-          <b>{item.price_30ml}</b>
+          <b>{item.price_750ml}</b>
+          <b>{item.price_180ml}</b>
+          <b>{item.price_90ml}</b>
           <b>{item.price_60ml}</b>
+          <b>{item.price_30ml}</b>
         </span>
       );
     }
 
     return (
       <span className="drink-price">
-        {item.price_30ml && <b>30ml {item.price_30ml}</b>}
+        {item.price_750ml && <b>750ml {item.price_750ml}</b>}
+        {item.price_180ml && <b>180ml {item.price_180ml}</b>}
+        {item.price_90ml && <b>90ml {item.price_90ml}</b>}
         {item.price_60ml && <b>60ml {item.price_60ml}</b>}
+        {item.price_30ml && <b>30ml {item.price_30ml}</b>}
       </span>
     );
   }
@@ -741,7 +747,7 @@ export default function NonVegMenuClient() {
   const visibleSections = search.trim() ? filteredSections : menuSections;
   const activeSection =
     visibleSections.find((section) => section.id === activeId) ?? visibleSections[0] ?? menuSections[0];
-  const usesServingColumns = activeSection ? hasTwoServingPrices(activeSection) : false;
+  const usesServingColumns = activeSection ? hasMultiServingPrices(activeSection) : false;
 
   useEffect(() => {
     const sections = (menuType === "nonveg" ? nonVegMenuSections : drinksMenuSections) as MenuSection[];
@@ -864,8 +870,11 @@ export default function NonVegMenuClient() {
                     <span />
                     <i />
                     <span className="serving-size-columns">
-                      <b>30ml</b>
+                      <b>750ml</b>
+                      <b>180ml</b>
+                      <b>90ml</b>
                       <b>60ml</b>
+                      <b>30ml</b>
                     </span>
                   </div>
                 )}
@@ -1199,8 +1208,9 @@ export default function NonVegMenuClient() {
         .drink-price--columns,
         .serving-size-columns {
           display: grid;
-          grid-template-columns: 38px 38px;
-          gap: 6px;
+          grid-template-columns: repeat(5, 34px);
+          gap: 4px;
+          font-size: 0.62rem;
         }
 
         .drink-price b {
