@@ -347,84 +347,84 @@ const drinksMenuSections = [
     id: "blended-scotch-whisky",
     title: "BLENDED SCOTCH WHISKY",
     items: [
-      { name: "BLENDRS PRIDE 750ML", price_30ml: "75", price_60ml: "150" },
-      { name: "CHIVAS REGEL 750ML 12Y", price_30ml: "210", price_60ml: "410" },
-      { name: "BLACK LEBEL 750ML", price_30ml: "210", price_60ml: "410" },
-      { name: "VAT 69 750ML", price_30ml: "125", price_60ml: "250" },
-      { name: "BLACK DOG RESERVE 750ML", price_30ml: "125", price_60ml: "250" },
-      { name: "100 PIPERS 12 YERS 750ML", price_30ml: "180", price_60ml: "360" },
-      { name: "100 PIPERS DELUX 750ML", price_30ml: "125", price_60ml: "250" },
-      { name: "TEACHERS HIGH LAND CREAM 750ML", price_30ml: "125", price_60ml: "250" },
-      { name: "BLACK & WHITE 750ML", price_30ml: "125", price_60ml: "250" },
-      { name: "RED LEBEL 750ML", price_30ml: "155", price_60ml: "310" },
-      { name: "BALLENTINES 750ML", price_30ml: "150", price_60ml: "300" },
-      { name: "DEWARS WHITE LEBEL 750ML", price_30ml: "125", price_60ml: "250" },
-      { name: "BLENDERS PRIDE RESERVE 750ML", price_30ml: "85", price_60ml: "170" },
-      { name: "TEACHERS 50 750ML", price_30ml: "170", price_60ml: "340" },
-      { name: "JAMESON IRISH 750ML", price_30ml: "280", price_60ml: "360" },
-      { name: "BLACK DOG GOLD RESERVE 750ML", price_30ml: "180", price_60ml: "360" }
+      { name: "BLENDRS PRIDE 750ML", price_750ml: "1760", price_180ml: "450", price_90ml: "225", price_60ml: "150", price_30ml: "75" },
+      { name: "CHIVAS REGEL 750ML 12Y", price_750ml: "4915", price_180ml: "1230", price_90ml: "620", price_60ml: "410", price_30ml: "210" },
+      { name: "BLACK LEBEL 750ML", price_750ml: "4915", price_180ml: "1230", price_90ml: "620", price_60ml: "410", price_30ml: "210" },
+      { name: "VAT 69 750ML", price_750ml: "2920", price_180ml: "730", price_90ml: "370", price_60ml: "250", price_30ml: "125" },
+      { name: "BLACK DOG RESERVE 750ML", price_750ml: "2920", price_180ml: "730", price_90ml: "370", price_60ml: "250", price_30ml: "125" },
+      { name: "100 PIPERS 12 YERS 750ML", price_750ml: "4270", price_180ml: "1070", price_90ml: "535", price_60ml: "360", price_30ml: "180" },
+      { name: "TEACHERS HIGH LAND CREAM 750ML", price_750ml: "2930", price_180ml: "730", price_90ml: "370", price_60ml: "250", price_30ml: "125" },
+      { name: "100 PIPERS DELUX 750ML", price_750ml: "2920", price_180ml: "730", price_90ml: "370", price_60ml: "250", price_30ml: "125" },
+      { name: "BLACK & WHITE 750ML", price_750ml: "2920", price_180ml: "730", price_90ml: "370", price_60ml: "250", price_30ml: "125" },
+      { name: "RED LEBEL 750ML", price_750ml: "3650", price_180ml: "920", price_90ml: "460", price_60ml: "310", price_30ml: "155" },
+      { name: "BALLENTINES 750ML", price_750ml: "3510", price_180ml: "880", price_90ml: "440", price_60ml: "300", price_30ml: "150" },
+      { name: "DEWARS WHITE LEBEL 750ML", price_750ml: "2920", price_180ml: "730", price_90ml: "370", price_60ml: "250", price_30ml: "125" },
+      { name: "BLENDERS PRIDE RESERVE 750ML", price_750ml: "1950", price_180ml: "490", price_90ml: "250", price_60ml: "170", price_30ml: "85" },
+      { name: "TEACHERS 50 750ML", price_750ml: "4110", price_180ml: "1030", price_90ml: "515", price_60ml: "340", price_30ml: "170" },
+      { name: "JAMESON IRISH 750ML", price_750ml: "4270", price_180ml: "1070", price_90ml: "535", price_60ml: "360", price_30ml: "280" },
+      { name: "BLACK DOG GOLD RESERVE 750ML", price_750ml: "4300", price_180ml: "1080", price_90ml: "540", price_60ml: "360", price_30ml: "180" }
     ]
   },
   {
     id: "indian-whisky",
     title: "INDIAN WHISKY",
     items: [
-      { name: "AMRUT FUSION 750ML", price_30ml: "180", price_60ml: "360" },
-      { name: "AMRUT AMULGAM 750ML", price_30ml: "160", price_60ml: "320" },
-      { name: "MCDOWELL'S NO 1 LUXURY 750ML", price_30ml: "50", price_60ml: "100" },
-      { name: "ROYAL CHALLENGE 750ML", price_30ml: "65", price_60ml: "130" },
-      { name: "ROYAL STAG 750ML", price_30ml: "65", price_60ml: "130" }
+      { name: "AMRUT FUSION 750ML", price_750ml: "4300", price_180ml: "1080", price_90ml: "540", price_60ml: "360", price_30ml: "180" },
+      { name: "AMRUT AMULGAM 750ML", price_750ml: "3750", price_180ml: "940", price_90ml: "470", price_60ml: "320", price_30ml: "160" },
+      { name: "MCDOWELL'S NO 1 LUXURY 750ML", price_750ml: "1160", price_180ml: "300", price_90ml: "150", price_60ml: "100", price_30ml: "50" },
+      { name: "ROYAL CHALLENGE 750ML", price_750ml: "1510", price_180ml: "390", price_90ml: "195", price_60ml: "130", price_30ml: "65" },
+      { name: "ROYAL STAG 750ML", price_750ml: "1510", price_180ml: "390", price_90ml: "195", price_60ml: "130", price_30ml: "65" }
     ]
   },
   {
     id: "brandy",
     title: "BRANDY",
     items: [
-      { name: "MANSION HOUSE 750ML", price_30ml: "55", price_60ml: "110" },
-      { name: "MORPHOUS XO PREMIUM 750ML", price_30ml: "70", price_60ml: "140" }
+      { name: "MANSION HOUSE 750ML", price_750ml: "1280", price_180ml: "320", price_90ml: "160", price_60ml: "110", price_30ml: "55" },
+      { name: "MORPHOUS XO PREMIUM 750ML", price_750ml: "1710", price_180ml: "430", price_90ml: "215", price_60ml: "140", price_30ml: "70" }
     ]
   },
   {
     id: "gin",
     title: "GIN",
     items: [
-      { name: "BOMBAY SAPPHIRE 750ML", price_30ml: "180", price_60ml: "360" }
+      { name: "BOMBAY SAPPHIRE 750ML", price_750ml: "4280", price_180ml: "1070", price_90ml: "535", price_60ml: "360", price_30ml: "180" }
     ]
   },
   {
     id: "tequilla",
     title: "TEQUILLA",
     items: [
-      { name: "CAMINO REAL 750ML", price_30ml: "180", price_60ml: "360" }
+      { name: "CAMINO REAL 750ML", price_750ml: "4280", price_180ml: "1070", price_90ml: "535", price_60ml: "360", price_30ml: "180" }
     ]
   },
   {
     id: "rum",
     title: "RUM",
     items: [
-      { name: "OLD MONK XXX RUM 750ML", price_30ml: "45", price_60ml: "90" },
-      { name: "CAPTAIN MORGAN 750ML", price_30ml: "70", price_60ml: "140" },
-      { name: "OLD MONK LEGEND 750ML", price_30ml: "80", price_60ml: "160" },
-      { name: "BACARDI WHITE RUM 750ML", price_30ml: "100", price_60ml: "200" },
-      { name: "OLD MONK SUPREME 750ML", price_30ml: "70", price_60ml: "140" }
+      { name: "OLD MONK XXX RUM 750ML", price_750ml: "1020", price_180ml: "260", price_90ml: "130", price_60ml: "90", price_30ml: "45" },
+      { name: "CAPTAIN MORGAN 750ML", price_750ml: "1600", price_180ml: "400", price_90ml: "200", price_60ml: "140", price_30ml: "70" },
+      { name: "OLD MONK LEGEND 750ML", price_750ml: "1880", price_180ml: "470", price_90ml: "240", price_60ml: "160", price_30ml: "80" },
+      { name: "BACARDI WHITE RUM 750ML", price_750ml: "2320", price_180ml: "580", price_90ml: "290", price_60ml: "200", price_30ml: "100" },
+      { name: "OLD MONK SUPREME 750ML", price_750ml: "1600", price_180ml: "400", price_90ml: "200", price_60ml: "140", price_30ml: "70" }
     ]
   },
   {
     id: "vodka",
     title: "VODKA",
     items: [
-      { name: "SMIRN OFF ORANGE 750ML", price_30ml: "100", price_60ml: "200" },
-      { name: "ABSOLUTE 750ML", price_30ml: "175", price_60ml: "350" },
-      { name: "MAGIC MOMENT GRAIN 750ML", price_30ml: "70", price_60ml: "140" }
+      { name: "SMIRN OFF ORANGE 750ML", price_750ml: "2410", price_180ml: "610", price_90ml: "305", price_60ml: "200", price_30ml: "100" },
+      { name: "ABSOLUTE 750ML", price_750ml: "4170", price_180ml: "1050", price_90ml: "525", price_60ml: "350", price_30ml: "175" },
+      { name: "MAGIC MOMENT GRAIN 750ML", price_750ml: "1600", price_180ml: "400", price_90ml: "200", price_60ml: "140", price_30ml: "70" }
     ]
   },
   {
     id: "wine",
     title: "WINE",
     items: [
-      { name: "FREATELLI 750ML", price_30ml: "55", price_60ml: "110" },
-      { name: "BIG BANYAN 750ML", price_30ml: "50", price_60ml: "100" },
-      { name: "NOI 750ML", price_30ml: "55", price_60ml: "110" }
+      { name: "FREATELLI 750ML", price_750ml: "1255", price_180ml: "320", price_90ml: "160", price_60ml: "110", price_30ml: "55" },
+      { name: "BIG BANYAN 750ML", price_750ml: "1180", price_180ml: "300", price_90ml: "150", price_60ml: "100", price_30ml: "50" },
+      { name: "NOI 750ML", price_750ml: "1305", price_180ml: "330", price_90ml: "165", price_60ml: "110", price_30ml: "55" }
     ]
   },
   {
@@ -444,7 +444,7 @@ const drinksMenuSections = [
       { name: "BUD PRE 330ML", price: "160" },
       { name: "CORONA 330ML", price: "170" },
       { name: "BUD MAG 330ML", price: "190" },
-      { name: "KF STRONG 330ML", price: "110" },
+      { name: "KF STRONG 330ML", price: "110" }
     ]
   },
   {
@@ -586,8 +586,11 @@ type MenuType = "nonveg" | "drinks";
 type MenuItem = {
   name: string;
   price?: string;
-  price_30ml?: string;
+  price_750ml?: string;
+  price_180ml?: string;
+  price_90ml?: string;
   price_60ml?: string;
+  price_30ml?: string;
   price_150ml?: string;
 };
 
