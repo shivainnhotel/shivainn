@@ -15,6 +15,7 @@ type Status = "idle" | "submitting" | "success" | "error";
 
 export function LeadCapturePopup() {
   const pathname = usePathname();
+  const isHomePage = pathname === "/";
   const [open, setOpen] = useState(false);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -26,7 +27,7 @@ export function LeadCapturePopup() {
     touchedPhone && phone.length !== 10 ? "Enter a valid 10 digit mobile number." : "";
 
   useEffect(() => {
-    if (pathname === "/vegmenu" || pathname === "/nonvegmenu") {
+    if (!isHomePage) {
       return;
     }
 
@@ -40,11 +41,7 @@ export function LeadCapturePopup() {
     }, 10000);
 
     return () => window.clearTimeout(timer);
-  }, [pathname]);
-
-  if (pathname === "/vegmenu" || pathname === "/nonvegmenu") {
-    return null;
-  }
+  }, [isHomePage]);
 
   useEffect(() => {
     if (!open) {
@@ -65,6 +62,10 @@ export function LeadCapturePopup() {
       window.removeEventListener("keydown", onKeyDown);
     };
   }, [open, status]);
+
+  if (!isHomePage) {
+    return null;
+  }
 
   const close = () => {
     if (status !== "submitting") {
